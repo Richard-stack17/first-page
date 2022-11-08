@@ -1,0 +1,374 @@
+html{
+    box-sizing: border-box;
+    scroll-behavior:smooth;
+    font-family: 'Raleway', sans-serif;
+    
+}
+*, *::after, *::before{
+    box-sizing: inherit;
+}
+section{
+    border: 2px solid transparent;
+}
+div{
+    margin:1vw;
+    padding:2rem;
+    
+}
+body{
+    background-image: url('https://img.freepik.com/vector-premium/fondo-cuadricula-beige-simplicidad-usos-diseno_317810-2863.jpg?w=2000') ;
+    margin:0;
+}
+main{
+    text-align:center;
+    
+}
+.number{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+p{
+    color:blue;
+};
+p::selection{
+    background-color: pink;
+    color:chocolate;
+}
+section{
+    margin-bottom:1rem;
+}
+.email{
+    overflow: auto;
+}
+h4{
+    color:rgb(101, 39, 158);
+}
+h5{
+    color:rgb(53, 11, 93);
+    font-size:90%;
+    
+}
+.name{
+    color:rgb(60, 10, 154);
+    font-size: 3.5rem;
+    margin-top:1vw;
+    margin-bottom:1vw;
+    text-shadow:0.094rem 0.2rem 0.063rem rgb(221, 123, 177) ;
+}
+.presentacion{
+    padding:1vw;
+    display:grid;
+    
+}
+h2{
+    color:rgb(109, 19, 177);
+    text-shadow: 0.094rem 0.094rem 0.063rem violet ;
+    margin-top: 10vh;
+}
+h3{
+    color:rgb(101, 29, 168);
+    
+}
+.img{
+    width: 15vw;
+    object-fit: cover;
+    
+}
+.estudios img{
+    box-shadow:0.1rem 0.6rem 0.2rem #0000002e;
+    background-color: azure;
+    border-radius:1rem;
+}
+
+.image-me{
+    width:70%;
+    height:90%;
+    border-radius: 50%;
+    border: 0.4rem solid white;
+    box-shadow: 0.15rem 0.15rem 0.15rem 0.15rem rgb(98, 88, 88);
+    border-style:ridge;
+    margin:auto;
+    
+}
+
+.redes{
+    display:flex;
+    gap:1rem;
+    justify-content: center;
+    
+}
+.bx{
+    color:beige;
+    padding:0;
+    margin:0;
+}
+.navbar__logo{
+    color:beige;
+    margin-right: 8%;
+}
+header{
+    background-color: rgba(126, 93, 223, 1);
+    padding:0.1vh;
+    border-radius: 1rem;
+    text-align: center;
+    height:6vh;
+}
+
+li.navbar__item{
+    display:inline;
+    margin-right: 1.5vw;
+    
+ }
+
+.navbar__list{
+    padding:0;
+}
+.navbar__menu{
+    height:20vw;
+    padding-top:0.5rem;
+    margin:0;
+}
+.naw{
+    margin-top:1.5vh;
+}
+hr {
+    width:50%;
+    height:1%;
+    background-color: rgba(199, 5, 186, 0.589);
+  }
+.spanH{
+    display:block;
+    color:rgb(190, 17, 175);
+    font-weight: bold;
+    font-size: small;
+}
+nav ul li a{
+    text-decoration: none;
+    font-weight: bold;
+    color:beige;
+}
+
+header{
+    width:100%;
+    position:fixed;
+    font-size: 1rem;
+    
+}
+
+
+[target='_blank']{
+    color: chocolate;
+}
+
+[target='_blank']::after{
+    content:'✔';
+}
+a{
+    text-decoration: none;
+    outline: none;
+    transition: color .5s ease;
+}
+a:hover{
+    color:rgb(69, 185, 187);
+}
+
+.contenedor-about{
+    text-align:center;
+    margin:auto;
+    width:50%;
+}
+
+section.prog-hab{
+    display:flex;
+    flex-wrap: wrap;
+    width:94%;
+    padding-left:6%;
+    margin:auto;
+    
+    
+}
+
+.pics{
+    object-fit: cover;
+    box-shadow:1rem 2rem 1vw #0000002e;
+    margin:0.5rem;
+    border-radius: 0.8rem;
+    width:70vw;
+}
+
+a.navbar__link{
+    font-size:1rem;
+    margin-right: 0.05vw;
+    margin-top:0;
+}
+.text{
+    text-align:justify;
+
+}
+nav ul li a::before {
+    display: inline-block;
+    content: '――――';
+    width: 0%;
+    color: rgb(176, 40, 40);
+    height: 0px;
+    top:0;
+    position: absolute;
+    transition: width 0.2s;
+  }
+div.col{
+    box-shadow: 1vw 2vw 3vw #00000030; 
+    width:30vw;
+    padding:5vw;
+    background-color: rgb(245, 245, 220);
+    border-radius: 0.5rem;
+    margin: 0 auto;
+    margin-bottom: 3vw;
+    border: 0.5vw outset rgb(215, 76, 99);
+}
+footer{
+    background-color: coral;
+    padding:1vw;
+    text-align:center;
+}
+#despedida{
+    color:rgb(238, 238, 227);
+    text-shadow: 0.094rem 0.094rem 0.063rem rgb(110, 50, 110) ;
+    font-size: larger;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .navbar__menu {
+      position: fixed;
+      top:-100%;
+      left:0;
+      width: 100%;
+      height:7%;
+      border-radius: 0 0 12px 12px;
+      background-color: rgb(159, 43, 222);
+      box-shadow: 0px 1px 9px 2px #00000024;
+      transition: .5s;
+      
+    }
+    .show--menu{
+        top:0;
+    }
+     
+  }
+
+
+
+@media (min-width: 768px) {
+    
+    div.col{
+        width:15%;
+        padding:10px;
+        padding-left: 1px;
+        padding-right: 10px;
+    }
+    
+    
+    a.navbar__link{
+        font-size:1.4rem;
+        margin-right: 5%;
+    }
+    ul.navbar__list{
+        margin-top: 1vw;
+    }
+    header{
+        height:6vh;
+        font-size: 1.9rem;
+    }
+    .navbar__menu {
+      position: fixed;
+      top:-100px;
+      width: 100%;
+      height:7vh;
+      border-radius: 0 0 12px 12px;
+      background-color: rgb(57, 167, 200);
+      box-shadow: 0px 1px 9px 2px #00000024;
+      transition: .5s;
+    }
+    a:hover{
+        color:rgb(15, 103, 104);
+    }
+    .show--menu{
+        top:0;
+    }
+    .img{
+        width:10vw;
+    }
+    .image-me{
+        width:30vw;
+
+    }
+    .prog-hab img{
+        width:90%;
+        height:80%;
+        
+    }
+    .pics{
+        width:25%;
+    }
+    
+  }
+@media (min-width: 1024px) {
+    
+    div.col{
+        width:15%;
+        padding:10px;
+        padding-left: 1px;
+        padding-right: 10px;
+    }
+    
+    
+    a.navbar__link{
+        font-size:1.4rem;
+        
+    }
+    header{
+        height:7vh;
+       
+    }
+    .navbar__logo{
+        display:none
+    }
+    .navbar__menu {
+      position: fixed;
+      top:-100px;
+      width: 100%;
+      height:10vh;
+      border-radius: 0 0 12px 12px;
+      background-color: rgb(57, 202, 141);
+      box-shadow: 0px 1px 9px 2px #00000024;
+      transition: .5s;
+    }
+    
+    .show--menu{
+        top:0;
+    }
+    .img{
+        width:6vw;
+    }
+    
+    .image-me{
+        width:28vw;
+        
+    }
+    .prog-hab img{
+        width:70%;
+        
+    }
+    .pics{
+        width:25%;
+    }
+    
+  }
+
+
+
+
+    
+
+
+
